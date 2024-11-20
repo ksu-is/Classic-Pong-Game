@@ -8,8 +8,8 @@ Week 2-
 - [x] Design ball
 - [x] Explore repositories for computer paddle to follow ball
 - [x] Write code for computer paddle to follow ball
-- [] Test base game
-
+- [x] Test base game
+- [] Make game work
 Week 3-
 
 - [] Explore repositories for difficulty of computer paddle
