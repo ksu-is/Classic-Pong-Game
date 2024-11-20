@@ -24,7 +24,7 @@ ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 ball_speed_x, ball_speed_y = 5, 5
 
 # Computer paddle speed
-COMPUTER_SPEED = 5
+COMPUTER_SPEED = 3
 
 # Frame rate control
 clock = pygame.time.Clock()
