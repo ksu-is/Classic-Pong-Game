@@ -2,12 +2,12 @@ Project Roadmap
 
 Week 2-
 
-- [] Explore repsitories for paddle design
-- [] Design paddles
-- [] Create system for user paddle to follow mouse
-- [] Design ball
-- [] Explore repositories for computer paddle to follow ball
-- [] Write code for computer paddle to follow ball
+- [x] Explore repsitories for paddle design
+- [x] Design paddles
+- [x] Create system for user paddle to follow mouse
+- [x] Design ball
+- [x] Explore repositories for computer paddle to follow ball
+- [x] Write code for computer paddle to follow ball
 - [] Test base game
 
 Week 3-
