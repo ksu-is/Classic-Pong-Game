@@ -5,7 +5,7 @@ import sys
 pygame.init()
 
 # Screen dimensions
-WIDTH, HEIGHT = 800,600
+WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong Game")
 
@@ -24,7 +24,7 @@ ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 ball_speed_x, ball_speed_y = 5, 5
 
 # Computer paddle speed
-COMPUTER_SPEED =5
+COMPUTER_SPEED = 5
 
 # Frame rate control
 clock = pygame.time.Clock()
@@ -66,7 +66,7 @@ while running:
 
     # Computer paddle follows ball (slower)
     if computer_paddle.centery < ball_y:
-         computer_paddle.y += COMPUTER_SPEED
+        computer_paddle.y += COMPUTER_SPEED
     elif computer_paddle.centery > ball_y:
         computer_paddle.y -= COMPUTER_SPEED
 
@@ -75,7 +75,7 @@ while running:
 
     # Move the ball
     ball_x += ball_speed_x
-  	  ball_y += ball_speed_y
+    ball_y += ball_speed_y
 
     # Ball bounces off top and bottom walls
     if ball_y - BALL_RADIUS <= 0 or ball_y + BALL_RADIUS >= HEIGHT:
@@ -101,11 +101,11 @@ while running:
     if user_score == WINNING_SCORE:
         display_winner("User")
         user_score, computer_score = 0, 0
-        ball_x, ball_y = WIDTH / 2, HEIGHT / 2
+        ball_x, ball_y = WIDTH // 2, HEIGHT // 2
     elif computer_score == WINNING_SCORE:
         display_winner("Computer")
         user_score, computer_score = 0, 0
-        ball_x, ball_y = WIDTH / 2, HEIGHT / 2
+        ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 
     # Redraw screen
     screen.fill(BLACK)
