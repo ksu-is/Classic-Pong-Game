@@ -138,8 +138,12 @@ def game_loop():
             user_score, computer_score = 0, 0
             ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 
-        # Redraw screen
-        screen.fill(BLACK)
+        # Redraw screen with the background features
+        screen.fill(BLACK)  # Black background
+        # Draw middle line
+        pygame.draw.line(screen, WHITE, (WIDTH // 2, 0), (WIDTH // 2, HEIGHT), 2)
+        # Draw center circle
+        pygame.draw.circle(screen, WHITE, (WIDTH // 2, HEIGHT // 2), 50, 2)
         pygame.draw.rect(screen, WHITE, user_paddle)
         pygame.draw.rect(screen, WHITE, computer_paddle)
         pygame.draw.circle(screen, WHITE, (ball_x, ball_y), BALL_RADIUS)
